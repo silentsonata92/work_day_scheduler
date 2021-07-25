@@ -14,5 +14,5 @@
 ## Roadmap
 - Will be continuing to modify the page primarily "cleaning" and "organizing" the app.js to be more readable.
 
-## Project STatus
+## Project Status
 - Status: Busy( Needs to be updated)
