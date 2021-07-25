@@ -21,7 +21,7 @@ for (let i = 9; i < 18; i++) {
 }
 //added buttons to save to local storage and to delete from local storage
 document.addEventListener('click', event => {
-  if (event.target.classList.contains('saveBtn')) {
+  if (event.target.classList.contains('saveBtn')){
     let text = $(event.target).prev('.description').val()
     let time = $(event.target).parent().attr('id')
     localStorage.setItem(time, text)
@@ -30,6 +30,10 @@ document.addEventListener('click', event => {
     let time = $(event.target).parent().attr('id')
     localStorage.removeItem(time, text)
     window.location.reload()
+  } else if (event.target.classList.contains('fas')) {
+    let text = $(event.target).prev('.description').val()
+    let time = $(event.target).parent().attr('id')
+    localStorage.setItem(time, text)
   }
 })
 
